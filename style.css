@@ -10,8 +10,8 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 
 body {
@@ -20,6 +20,7 @@ body {
     height: 100vh;
     
 }
+
 .container {
     display: flex;
     width: 100%;
@@ -40,23 +41,23 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    flex: 1.3 1 0;
-    
-    
+    flex: 1.3 1 0;   
 }
 
 #right-container > div {
     border: 1px solid;
-    width: 100%;
-    
+    width: 100%;   
 }
 
-#top, #bottom {
-    flex: 1.2 1 0;
+#top {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 #middle {
-    flex: 1 1 0;
+    flex: 1.4 1 0;
 
 }
 
@@ -67,4 +68,57 @@ body {
     top: 10rem;
 }
 
+fieldset > div{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.2rem;
+    
+}
+fieldset{
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: space-evenly;
+    width: 35vw; 
+   
+}
 
+input{
+    width: 10rem;
+    height: 1.1rem;
+}
+
+input, label, .middle_text, .button > *, #top > p{
+    position: relative;
+    left: 1rem;
+}
+
+form > div{
+    border: 1px solid;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    gap: 0.3rem;
+}
+
+
+.button > button {
+    width: 40%;
+}
+
+#top > p{
+    position: relative;
+    top: 10rem;
+    width: 30vw;
+    font-size: 1rem;
+}
